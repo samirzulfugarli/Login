@@ -1,8 +1,7 @@
-﻿namespace Project_Login.Entities
+﻿namespace Project_Login.Dtos.UserRegisterDtos
 {
-    public class UserRegister
+    public record UserRegisterToAddDtos
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Email { get; set; }
