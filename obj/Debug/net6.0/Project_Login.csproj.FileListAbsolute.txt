@@ -1,0 +1,7 @@
+C:\Users\Samir-SSD\source\repos\Project_Login\Project_Login\obj\Debug\net6.0\Project_Login.csproj.AssemblyReference.cache
+C:\Users\Samir-SSD\source\repos\Project_Login\Project_Login\obj\Debug\net6.0\Project_Login.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samir-SSD\source\repos\Project_Login\Project_Login\obj\Debug\net6.0\Project_Login.AssemblyInfoInputs.cache
+C:\Users\Samir-SSD\source\repos\Project_Login\Project_Login\obj\Debug\net6.0\Project_Login.AssemblyInfo.cs
+C:\Users\Samir-SSD\source\repos\Project_Login\Project_Login\obj\Debug\net6.0\Project_Login.csproj.CoreCompileInputs.cache
+C:\Users\Samir-SSD\source\repos\Project_Login\Project_Login\obj\Debug\net6.0\Project_Login.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Samir-SSD\source\repos\Project_Login\Project_Login\obj\Debug\net6.0\Project_Login.MvcApplicationPartsAssemblyInfo.cache
