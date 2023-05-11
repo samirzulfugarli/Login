@@ -20,17 +20,24 @@ namespace Project_Login.DAL.Concrete
             _context.SaveChanges();
         }
 
-        public List<UserRegister> Get()
+        public UserRegister Check(string username, string password)
         {
-            return _context.UserRegisters.ToList();
+            return _context.UserRegisters.FirstOrDefault(x => x.Username == username && x.Password== password)!;
+
         }
 
-        public UserRegister GetById(int id)
-        {
-            UserRegister userRegister = _context.UserRegisters.First(x=>x.Id == id);
-            return userRegister;
-        }
 
-      
+        //public List<UserRegister> Get()
+        //{
+        //    return _context.UserRegisters.ToList();
+        //}
+
+        //public UserRegister GetById(int id)
+        //{
+        //    UserRegister userRegister = _context.UserRegisters.First(x=>x.Id == id);
+        //    return userRegister;
+        //}
+
+
     }
 }

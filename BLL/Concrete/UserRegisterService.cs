@@ -22,5 +22,12 @@ namespace Project_Login.BLL.Concrete
             UserRegister userRegister = _mapper.Map<UserRegister>(dto);
             _unitOfWork.UserRegisterRepository.Add(userRegister);
         }
+
+        public UserRegister Check(string username,string password)
+        {
+            var user = _unitOfWork.UserRegisterRepository.Check(username,password);
+            return user;
+        }
+       
     }
 }

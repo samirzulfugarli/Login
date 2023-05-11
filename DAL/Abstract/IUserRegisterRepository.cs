@@ -5,8 +5,7 @@ namespace Project_Login.DAL.Abstract
 {
     public interface IUserRegisterRepository
     {
-        List<UserRegister> Get();
-        UserRegister GetById(int id);
-       void  Add(UserRegister userRegister);    
+        UserRegister Check(string username,string password);
+        void Add(UserRegister userRegister);
     }
 }
