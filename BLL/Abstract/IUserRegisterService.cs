@@ -1,6 +1,9 @@
-﻿namespace Project_Login.BLL.Abstract
+﻿using Project_Login.Dtos.UserRegisterDtos;
+
+namespace Project_Login.BLL.Abstract
 {
-    public class IUserRegisterService
+    public interface IUserRegisterService
     {
+        void Add(UserRegisterToAddDtos dto);
     }
 }

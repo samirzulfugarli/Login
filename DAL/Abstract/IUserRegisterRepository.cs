@@ -1,11 +1,12 @@
 ﻿using Project_Login.DAL.Concrete;
+using Project_Login.Entities;
 
 namespace Project_Login.DAL.Abstract
 {
     public interface IUserRegisterRepository
     {
-        List<UserRegisterRepository> Get();
-        UserRegisterRepository GetById(int id);
-        void Add(UserRegisterRepository UserRegister);    
+        List<UserRegister> Get();
+        UserRegister GetById(int id);
+       void  Add(UserRegister userRegister);    
     }
 }

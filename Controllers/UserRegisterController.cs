@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Project_Login.BLL.Abstract;
+using Project_Login.DAL.Abstract;
+using Project_Login.Dtos.UserRegisterDtos;
 
 namespace Project_Login.Controllers
 {
@@ -7,9 +10,18 @@ namespace Project_Login.Controllers
     [ApiController]
     public class UserRegisterController : ControllerBase
     {
-        public IActionResult Get()
+        private readonly IUserRegisterService _userRegisterService;
+        private readonly IUserRegisterRepository _userRegisterRepository;
+        public UserRegisterController(IUserRegisterRepository userRegisterRepository,IUserRegisterService userRegisterService)
         {
-            return Ok();
+            _userRegisterRepository = userRegisterRepository;
+            _userRegisterService = userRegisterService;
+        }
+        [HttpPost]
+        public IActionResult Add(UserRegisterToAddDtos dto)
+        {
+           _userRegisterService.Add(dto);
+            return  Ok();
         }
     }
 }

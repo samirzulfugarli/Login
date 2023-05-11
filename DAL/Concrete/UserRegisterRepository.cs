@@ -1,22 +1,36 @@
-﻿
+﻿using Project_Login.DAL.Abstract;
+using Project_Login.DAL.DataContexts;
+using Project_Login.Entities;
+
 namespace Project_Login.DAL.Concrete
 {
     public class UserRegisterRepository : IUserRegisterRepository
     {
         private readonly DataContext _context;
-        public void Add(UserRegisterRepository UserRegister)
+        public UserRegisterRepository(DataContext context)
         {
-            
+            _context=context;
         }
 
-        public List<UserRegisterRepository> Get()
+
+
+        public void Add(UserRegister userRegister)
         {
-            throw new NotImplementedException();
+            _context.UserRegisters.Add(userRegister);
+            _context.SaveChanges();
         }
 
-        public UserRegisterRepository GetById(int id)
+        public List<UserRegister> Get()
         {
-            throw new NotImplementedException();
+            return _context.UserRegisters.ToList();
         }
+
+        public UserRegister GetById(int id)
+        {
+            UserRegister userRegister = _context.UserRegisters.First(x=>x.Id == id);
+            return userRegister;
+        }
+
+      
     }
 }

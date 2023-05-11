@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Project_Login.Entities;
 
-namespace Project_Login.DAL.DataContext
+namespace Project_Login.DAL.DataContexts
 {
     public class DataContext:DbContext
     {
