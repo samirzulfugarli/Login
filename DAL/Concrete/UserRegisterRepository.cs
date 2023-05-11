@@ -6,14 +6,14 @@ namespace Project_Login.DAL.Concrete
 {
     public class UserRegisterRepository : IUserRegisterRepository
     {
-        private readonly DataContext _context;
-        public UserRegisterRepository(DataContext context)
+        private readonly MyContext _context;
+        public UserRegisterRepository(MyContext context)
         {
             _context=context;
         }
 
 
-
+        
         public void Add(UserRegister userRegister)
         {
             _context.UserRegisters.Add(userRegister);

@@ -10,7 +10,7 @@ using Project_Login.DAL.DataContexts;
 
 namespace Project_Login.Migrations
 {
-    [DbContext(typeof(DataContext))]
+    [DbContext(typeof(MyContext))]
     partial class DataContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

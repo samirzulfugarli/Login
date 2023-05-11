@@ -11,7 +11,7 @@ using Project_Login.DAL.DataContexts;
 
 namespace Project_Login.Migrations
 {
-    [DbContext(typeof(DataContext))]
+    [DbContext(typeof(MyContext))]
     [Migration("20230511124237_initial")]
     partial class initial
     {

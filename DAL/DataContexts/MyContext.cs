@@ -3,9 +3,9 @@ using Project_Login.Entities;
 
 namespace Project_Login.DAL.DataContexts
 {
-    public class DataContext:DbContext
+    public class MyContext:DbContext
     {
-        public DataContext(DbContextOptions<DataContext>options):base(options)
+        public MyContext(DbContextOptions<MyContext>options):base(options)
         {
 
         }
