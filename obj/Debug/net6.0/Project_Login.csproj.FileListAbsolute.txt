@@ -50,3 +50,4 @@ C:\Users\Samir-SSD\source\repos\Project_Login\Project_Login\bin\Debug\net6.0\Sys
 C:\Users\Samir-SSD\source\repos\Project_Login\Project_Login\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\Users\Samir-SSD\source\repos\Project_Login\Project_Login\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\Samir-SSD\source\repos\Project_Login\Project_Login\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Samir-SSD\source\repos\Project_Login\Project_Login\obj\Debug\net6.0\Project_Login.csproj.AssemblyReference.cache
